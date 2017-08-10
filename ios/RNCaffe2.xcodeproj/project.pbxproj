@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNCaffe2.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNCaffe2.m */; };
+		067038831F351F8300C2E3E6 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067038821F351F8300C2E3E6 /* opencv2.framework */; };
+		06F971C11F33A440002A026A /* libCaffe2_CPU.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F971C01F33A440002A026A /* libCaffe2_CPU.a */; };
+		06F971C31F33A445002A026A /* libCAFFE2_PTHREADPOOL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F971C21F33A445002A026A /* libCAFFE2_PTHREADPOOL.a */; };
+		06F971C51F33A44A002A026A /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F971C41F33A44A002A026A /* libprotobuf.a */; };
+		06FDC7131F2FD77800963E41 /* RNCaffe2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 06FDC70D1F2FD77800963E41 /* RNCaffe2.mm */; };
+		06FDC7221F2FDB6400963E41 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FDC7211F2FDB6400963E41 /* CoreMedia.framework */; };
+		06FDC7241F2FDB7000963E41 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FDC7231F2FDB7000963E41 /* AssetsLibrary.framework */; };
+		06FDC7261F2FDB7600963E41 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06FDC7251F2FDB7600963E41 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +30,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		063D65101F327EC50051A155 /* Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		067038821F351F8300C2E3E6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = Frameworks/opencv2.framework; sourceTree = "<group>"; };
+		06F971C01F33A440002A026A /* libCaffe2_CPU.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCaffe2_CPU.a; sourceTree = "<group>"; };
+		06F971C21F33A445002A026A /* libCAFFE2_PTHREADPOOL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCAFFE2_PTHREADPOOL.a; sourceTree = "<group>"; };
+		06F971C41F33A44A002A026A /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libprotobuf.a; sourceTree = "<group>"; };
+		06FDC7061F2FD77800963E41 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		06FDC7071F2FD77800963E41 /* classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classes.h; sourceTree = "<group>"; };
+		06FDC7081F2FD77800963E41 /* exec_net.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = exec_net.pb; sourceTree = "<group>"; };
+		06FDC70D1F2FD77800963E41 /* RNCaffe2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RNCaffe2.mm; sourceTree = "<group>"; };
+		06FDC70E1F2FD77800963E41 /* RNCaffe2.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RNCaffe2.podspec; sourceTree = "<group>"; };
+		06FDC7141F2FD82200963E41 /* predict_net.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = predict_net.pb; sourceTree = "<group>"; };
+		06FDC7211F2FDB6400963E41 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		06FDC7231F2FDB7000963E41 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		06FDC7251F2FDB7600963E41 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		134814201AA4EA6300B7C361 /* libRNCaffe2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCaffe2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNCaffe2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCaffe2.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNCaffe2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCaffe2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +53,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FDC7261F2FDB7600963E41 /* CoreVideo.framework in Frameworks */,
+				067038831F351F8300C2E3E6 /* opencv2.framework in Frameworks */,
+				06F971C51F33A44A002A026A /* libprotobuf.a in Frameworks */,
+				06F971C11F33A440002A026A /* libCaffe2_CPU.a in Frameworks */,
+				06FDC7241F2FDB7000963E41 /* AssetsLibrary.framework in Frameworks */,
+				06FDC7221F2FDB6400963E41 /* CoreMedia.framework in Frameworks */,
+				06F971C31F33A445002A026A /* libCAFFE2_PTHREADPOOL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06FDC7201F2FDB6400963E41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				067038821F351F8300C2E3E6 /* opencv2.framework */,
+				06F971C41F33A44A002A026A /* libprotobuf.a */,
+				06F971C21F33A445002A026A /* libCAFFE2_PTHREADPOOL.a */,
+				06F971C01F33A440002A026A /* libCaffe2_CPU.a */,
+				06FDC7251F2FDB7600963E41 /* CoreVideo.framework */,
+				06FDC7231F2FDB7000963E41 /* AssetsLibrary.framework */,
+				06FDC7211F2FDB6400963E41 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,9 +91,16 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				063D65101F327EC50051A155 /* Prefix.h */,
+				06FDC7141F2FD82200963E41 /* predict_net.pb */,
+				06FDC7061F2FD77800963E41 /* cat.jpg */,
+				06FDC7071F2FD77800963E41 /* classes.h */,
+				06FDC7081F2FD77800963E41 /* exec_net.pb */,
+				06FDC70D1F2FD77800963E41 /* RNCaffe2.mm */,
+				06FDC70E1F2FD77800963E41 /* RNCaffe2.podspec */,
 				B3E7B5881CC2AC0600A0062D /* RNCaffe2.h */,
-				B3E7B5891CC2AC0600A0062D /* RNCaffe2.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				06FDC7201F2FDB6400963E41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNCaffe2.m in Sources */,
+				06FDC7131F2FD77800963E41 /* RNCaffe2.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +186,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = Prefix.h;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -152,10 +202,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../caffe2",
+					"$(SRCROOT)/../caffe2/build_ios",
+					"$(SRCROOT)/../caffe2/build_host_protoc/include",
+					"$(SRCROOT)/../caffe2/third_party/eigen",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					./libCaffe2_CPU.a,
+				);
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -179,16 +241,30 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = Prefix.h;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../caffe2",
+					"$(SRCROOT)/../caffe2/build_ios",
+					"$(SRCROOT)/../caffe2/build_host_protoc/include",
+					"$(SRCROOT)/../caffe2/third_party/eigen",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					./libCaffe2_CPU.a,
+				);
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -196,14 +272,26 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = RNCaffe2;
 				SKIP_INSTALL = YES;
 			};
@@ -212,14 +300,26 @@
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = RNCaffe2;
 				SKIP_INSTALL = YES;
 			};

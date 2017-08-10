@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
 
   s.dependency "React"
   #s.dependency "others"
+  #s.frameworks = 'Accelerate', 'AssetsLibrary', 'AVFoundation', 'CoreGraphics', 'CoreImage', 'CoreMedia', 'CoreVideo', 'Foundation', 'opencv2', 'UIKit'
 
 end
 

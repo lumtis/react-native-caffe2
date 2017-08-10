@@ -1,0 +1,8 @@
+*.cubin
+*.pyc
+*.swp
+.DS_Store
+*.egg-info
+doc/source/generated
+doc/build
+.python_install_required

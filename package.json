@@ -6,12 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ltacker/react-native-caffe2.git"
+  },
   "keywords": [
-    "react-native"
+    "react-native",
+    "caffe2",
+    "deep-learning"
   ],
   "author": "Lucas Bertrand",
   "license": "MIT",
   "peerDependencies": {
     "react-native": "0.46.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ltacker/react-native-caffe2/issues"
+  },
+  "homepage": "https://github.com/ltacker/react-native-caffe2#readme"
 }

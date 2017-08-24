@@ -118,4 +118,24 @@ RCT_EXPORT_METHOD(classifyImage:(NSString *)imageName
 }
 
 
+RCT_EXPORT_METHOD(predict:(NSArray *)inpupData
+                  initModel:(NSString *)initModel
+                  predictModel:(NSString *)predictModel
+                  callback:(RCTResponseSenderBlock)callback)
+{
+  NSString *init_net_path = [NSBundle.mainBundle pathForResource:initModel ofType:@"pb"];
+  NSString *predict_net_path = [NSBundle.mainBundle pathForResource:predictModel ofType:@"pb"];
+
+  caffe2::Predictor *predictor = [self getPredictor:init_net_path predict_net_path:predict_net_path];
+
+  UIImage *image = [UIImage imageNamed:imageName];
+  NSArray *outputData = [self predictWithImage:image predictor:predictor classes:classes];
+
+  // This is to allow us to use memory leak checks.
+  google::protobuf::ShutdownProtobufLibrary();
+
+  callback(@[[NSNull null], outputData]);
+}
+
+
 @end
